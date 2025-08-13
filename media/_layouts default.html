@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Инструкция по Калькулятору</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    {% for item in site.navigation %}
+      {% if item.children %}
+        <h3>{{ item.title }}</h3>
+        <ul>
+          {% for child in item.children %}
+            <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
