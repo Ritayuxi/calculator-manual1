@@ -1,0 +1,28 @@
+title: Инструкция по программе «Калькулятор»
+description: Пользовательская инструкция к приложению Калькулятор в Windows
+theme: jekyll-theme-minimal
+
+# Навигация в меню слева
+navigation:
+  - title: Введение
+    url: /vvedenie/
+  - title: Термины и определения
+    url: /terminy/
+  - title: Назначение и условия
+    url: /naznachenie/
+  - title: Описание операций
+    children:
+      - title: Запуск программы
+        url: /zapusk/
+      - title: Основные режимы
+        url: /rezhymy/
+      - title: Выбор режима
+        url: /vybor-rezhyma/
+      - title: Выполнение расчетов
+        url: /raschety/
+      - title: Сложные примеры
+        url: /primery/
+      - title: Дополнительные функции
+        url: /dopolnitelno/
+      - title: Закрытие программы
+        url: /zakrytie/
